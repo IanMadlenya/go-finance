@@ -56,10 +56,10 @@ func GetHistory(symbol string, start Datetime, end Datetime, interval Interval) 
 
 	params := map[string]string{
 		"s":      symbol,
-		"a":      strconv.Itoa(start.Month),
+		"a":      strconv.Itoa(start.Month - 1),
 		"b":      strconv.Itoa(start.Day),
 		"c":      strconv.Itoa(start.Year),
-		"d":      strconv.Itoa(end.Month),
+		"d":      strconv.Itoa(end.Month - 1),
 		"e":      strconv.Itoa(end.Day),
 		"f":      strconv.Itoa(end.Year),
 		"g":      string(interval),
@@ -93,10 +93,10 @@ func GetEventHistory(symbol string, start Datetime, end Datetime) (e []Event, er
 
 	params := map[string]string{
 		"s":      symbol,
-		"a":      strconv.Itoa(start.Month),
+		"a":      strconv.Itoa(start.Month - 1),
 		"b":      strconv.Itoa(start.Day),
 		"c":      strconv.Itoa(start.Year),
-		"d":      strconv.Itoa(end.Month),
+		"d":      strconv.Itoa(end.Month - 1),
 		"e":      strconv.Itoa(end.Day),
 		"f":      strconv.Itoa(end.Year),
 		"g":      "v",
