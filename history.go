@@ -8,11 +8,11 @@ import (
 
 const (
 	// Day interval.
-	Day = "d"
+	IntervalDaily = "d"
 	// Week interval.
-	Week = "w"
+	IntervalWeekly = "w"
 	// Month interval.
-	Month = "m"
+	IntervalMonthly = "m"
 
 	// Dividend constant.
 	Dividend = "DIVIDEND"
