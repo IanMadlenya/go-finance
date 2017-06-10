@@ -12,7 +12,7 @@ func Test_GetHistory(t *testing.T) {
 	defer s.Close()
 	HistoryURL = s.URL
 
-	bars, err := GetHistory("TWTR", Datetime{}, Datetime{}, Day)
+	bars, err := GetHistory("TWTR", Datetime{}, Datetime{}, IntervalDaily)
 	assert.Nil(t, err)
 
 	// result should be a TWTR bar.
