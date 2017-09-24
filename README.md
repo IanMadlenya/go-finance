@@ -92,7 +92,6 @@ package main
 
 import (
 	"fmt"
-	"time"
 
 	"github.com/FlashBoys/go-finance"
 )
